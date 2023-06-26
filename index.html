@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assignment 1</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="col-12">
+                <h2 class="header">Difference between HTTP 1.1 and HTTP 2</h2>
+
+                <ul class="points">
+                    <li>HTTP 1.1 was created in 1997 while HTTP 2 was created much later in 2015</li>
+                    <li>HTTP 1.1 is a text based transfer protocol which keeps all requests and responses in plain text format whereas HTTP 2 uses <b>binary framing layer</b> which converts all messages in binary format.</li>
+                    <li>In HTTP 1.1 multiple requests are send sequentially requiring multiple connections while HTTP 2 supports multiplexing,which allows multiple requests and response to be sent over a single connection concurrently.</li>
+                    <li>HTTP 1.1 compresses data by itself and in HTTP 1.1 header information is sent with each request and response burdening the data bandwidth whereas HTTP 2 uses <b>H-PACK</b> for data compression to reduce the overhead of sending header information with each request and response which results in reduced bandwidth usage and faster and smoother performance</li>
+                    <li>Although HTTP 1.1 has multiplexing but still the issue arises when multiple streams awaits the same resource HTTP 2 handles this issue well with the concept of <b>Stream Prioritization.</b> This enables more important resources to be delivered faster, enhancing the user experience.</li>
+                    <li>HTTP 1.1 requires opening and closing of connections every time a request is made while in HTTP 2 allows the reuse of single connection for multiple requests and responses.</li>
+                    <li>HTTP 2 is designed to be compatible with HTTP 1.1 i.e servers using HTTP 2 can still communicate with clients using HTTP 1.1</li>
+                    <li>Overall features like improved performance,multiplexing,header compression and server push makes HTTP 2 a more preferred choice.</li>
+                </ul> 
+            </div>
+        </div>
+
+    </div>
+</body>
+</html>

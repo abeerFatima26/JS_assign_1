@@ -1,0 +1,27 @@
+body{
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif
+}
+
+.container{
+    margin: auto;
+    max-width: 75%;
+}
+
+.header{
+    color:crimson;
+    margin-bottom: 30px;
+}
+
+.points{
+    padding-left: 0;
+    list-style: decimal;
+}
+
+.points li{
+    margin-bottom: 10px;
+    line-height: 1.5;
+    font-size: 18px;
+}
